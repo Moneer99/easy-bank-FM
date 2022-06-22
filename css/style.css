@@ -79,3 +79,57 @@ div.request a:hover {
 div.hamburger {
   display: none;
 }
+
+/* --------------- start main ---------------- */
+article {
+  display: flex;
+}
+
+div.article-one-text {
+  align-self: center;
+  padding-left: 7rem;
+  width: 35%;
+}
+
+div.article-one-text p {
+  margin: 0 0 2.5rem;
+}
+
+div.article-one-text a {
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%));
+  padding: 0.7rem -1.5rem;
+  border-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+div.article-one-text a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+div.article-one-image {
+  background-image: url(bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  width: 65%;
+  display: flex;
+  justify-content: end;
+}
+/* ------------------- End article one -------------------- */
+
+/* --------------------- article two ---------------------- */
+article.article-two {
+  flex-direction: column;
+  background-color: hsl(220, 16%, 96%);
+  margin-top: -5rem;
+  padding: 7rem;
+}
+
+:is(.sections-one, .sections-two) {
+  display: flex;
+  margin-top: 3rem;
+}
+
+/* --------------------- End article two ---------------------- */
+
+/* -------------------------------- End main -------------------------------- */
