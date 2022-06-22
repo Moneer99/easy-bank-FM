@@ -130,6 +130,26 @@ article.article-two {
   margin-top: 3rem;
 }
 
+:is(div.sections-one, div.sections-two) section {
+  padding-right: 1.5rem;
+}
+
+:is(div.sections-one, div.sections-two) section:last-child {
+  padding-right: 0;
+}
+
+div.sections-one section img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+article.article-three {
+  flex-direction: column;
+}
+
+figure img {
+  width: 100%;
+}
 /* --------------------- End article two ---------------------- */
 
 /* -------------------------------- End main -------------------------------- */
