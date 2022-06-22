@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(233, 8%, 62%);
+  font-size: 1.125em;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  color: hsl(233, 8%, 62%);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.87rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+  padding: 1.3rem 0;
+}
+
+svg {
+  color: #fff;
+}
+
+/* --------------------- nav ------------------------- */
+nav {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 7rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+div.links ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  margin: 0 1rem;
+  padding: 1.6rem 0;
+  border-bottom: 0.25 solid transparent;
+}
+
+nav li:hover {
+  border-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 50%),
+    hsl(192, 70%, 50%)
+  );
+  border-image-slice: 1;
+}
+
+nav li:hover a {
+  color: hsl(233, 26%, 24%);
+}
+
+div.request a:hover {
+  opacity: 0.5;
+  /*filter For IE8 and earlier versions supports */
+  filter: alpha(opacity=50);
+}
+
+div.hamburger {
+  display: none;
+}
