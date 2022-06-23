@@ -70,6 +70,17 @@ nav li:hover a {
   color: hsl(233, 26%, 24%);
 }
 
+div.request a {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
 div.request a:hover {
   opacity: 0.5;
   /*filter For IE8 and earlier versions supports */
@@ -96,8 +107,12 @@ div.article-one-text p {
 }
 
 div.article-one-text a {
-  background-image: linear-gradient(to right, hsl(136, 65%, 51%));
-  padding: 0.7rem -1.5rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  padding: 0.7rem 1.5rem;
   border-radius: 2rem;
   color: hsl(0, 0%, 100%);
 }
@@ -189,6 +204,66 @@ footer {
   padding: 2.5rem 7rem;
 }
 
+div.site-footer div.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.site-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+div.social-media-icons a {
+  margin-right: 0.7rem;
+}
+
+div.social-media-icons a:hover svg {
+  color: hsl(192, 70%, 51%);
+}
+
+:is(div) .links-one,
+.links-two {
+  display: flex;
+  flex-direction: column;
+}
+
+:is(div.links-one, div.links-two) a {
+  margin-top: 1rem;
+  color: hsl(0, 0%, 96%);
+}
+
+:is(div.links-one, div.links-two, div.attribution-container) a:hover {
+  color: hsl(192, 70%, 51%);
+}
+
+div.request-box {
+  display: flex;
+  font-display: column;
+  justify-content: space-between;
+}
+
+div.request-box p {
+  font-size: 1rem;
+  margin-top: 4rem;
+  margin-left: -2rem;
+}
+
+div.attribution-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.attribution-container a {
+  color: hsl(0, 0%, 96%);
+}
+
 /* ----------------------- End footer ------------------------- */
 
 /* -------------------------------- End main -------------------------------- */
+
+/* ------------------------------- media query ------------------------------ */
+
+/* ------------------------------- End media query ------------------------------ */
