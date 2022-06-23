@@ -143,13 +143,52 @@ div.sections-one section img {
   height: 3.5rem;
 }
 
+/* --------------------- End article two ---------------------- */
+
+/* ------------------- article three ------------------- */
+
 article.article-three {
   flex-direction: column;
+  padding: 7rem;
 }
 
 figure img {
   width: 100%;
 }
-/* --------------------- End article two ---------------------- */
+
+figcaption {
+  font-size: 0.875rem;
+  padding: 0 1.625rem;
+  background-color: hsl(0, 27%, 100%);
+}
+
+div.sections-two h4:hover {
+  color: hsl(192, 70%, 51%);
+  transition: all 0.5s;
+}
+
+div.sections-two p {
+  height: 9.187rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+:is(div.sections-two) p,
+h4 {
+  padding: 0.3rem -1.625em 0.5rem;
+  background-color: hsl(0, 27%, 100%);
+}
+
+/* -------------------End article three ------------------- */
+
+/* ----------------------- footer ------------------------- */
+footer {
+  background-color: hsl(233, 26%, 24%);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 7rem;
+}
+
+/* ----------------------- End footer ------------------------- */
 
 /* -------------------------------- End main -------------------------------- */
